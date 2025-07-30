@@ -1,10 +1,4 @@
-Absolutely! Here's the **full updated version of your `README.md`**, now with:
 
-✅ A Medium article link about **MiniLibX**
-✅ A Medium article link about **Cub3D** development
-✅ Proper formatting for GitHub with section placement
-
-You can **copy-paste** this directly into your GitHub project. Just remember to replace the placeholder links (`https://medium.com/@yourusername/...`) with your actual Medium URLs.
 
 ---
 
@@ -223,7 +217,7 @@ If the mandatory part is **100% complete**, you may implement:
 
 ## 👨‍💻 **Author**
 
-🧑‍💻 [Abdilah Chemalal](https://github.com/A-chem)
+🧑‍💻 [Abdilah Chemlal](https://github.com/A-chem)
 
 ---
 
