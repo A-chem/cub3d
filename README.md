@@ -1,196 +1,60 @@
-## 🧱 **Cub3D**
+Great! Here's the updated version of your `README.md`, now including a **📖 Medium article link** section where you can share tutorials, walkthroughs, or detailed dev blogs for your **Cub3D** project.
 
----
-
-### **🔹 Step 1: Understand the Goal**
-
-Cub3D is your **first raycasting engine** using **MiniLibX**, inspired by the game **Wolfenstein 3D**.
-You need to:
-
-* Parse a map from a `.cub` file.
-* Render a **3D view** using **raycasting**.
-* Handle player movement in a maze.
-* Display wall **textures** and floor/ceiling **colors**.
-
----
-
-### **🔹 Step 2: Project Setup**
-
-#### ✅ Allowed:
-
-* **MiniLibX**
-* **Math functions** (`-lm`)
-* **Basic C functions** (`open`, `read`, `malloc`, etc.)
-* **libft**
-
-#### 📁 You must have:
-
-* A working **Makefile** with rules: `all`, `clean`, `fclean`, `re`, `bonus`
-* A scene file (map) ending in `.cub`
-
----
-
-### **🔹 Step 3: Parsing the `.cub` File**
-
-You need to parse this file and extract:
-
-#### 1. **Texture paths**:
-
-```txt
-NO ./path_to_north_texture
-SO ./path_to_south_texture
-WE ./path_to_west_texture
-EA ./path_to_east_texture
-```
-
-#### 2. **Colors**:
-
-```txt
-F 220,100,0  (Floor RGB)
-C 225,30,0   (Ceiling RGB)
-```
-
-#### 3. **Map layout** (at the end of file):
-
-```txt
-111111
-100001
-1000N1
-111111
-```
-
-* `1`: wall
-* `0`: empty space
-* `N`, `S`, `E`, `W`: player position + spawn direction
-
-#### 🔒 Map rules:
-
-* Must be **enclosed** in walls.
-* Must contain **one player start**.
-* Spaces inside map are valid and must be handled.
-* If the file is invalid → show `"Error\n"` + message.
-
----
-
-### **🔹 Step 4: Build the Raycasting Engine**
-
-#### 📐 What is raycasting?
-
-A method where you send rays from the player’s POV to detect walls and draw vertical slices based on the wall distance.
-
-#### 🧮 Steps:
-
-1. **Player’s position and direction**
-2. **Calculate camera plane**
-3. **Cast one ray per column**
-4. **Use DDA (Digital Differential Analyzer)** to detect wall hit
-5. **Calculate wall height** using the distance
-6. **Choose texture based on wall direction**
-7. **Draw the correct slice of texture**
-
----
-
-### **🔹 Step 5: Display Using MiniLibX**
-
-* Use `mlx_new_window`, `mlx_put_image_to_window`, etc.
-* Create an image buffer to draw each frame.
-
-#### Controls:
-
-* **WASD** for movement
-* **← →** for rotation
-* **ESC or red cross** to exit
-
----
-
-### **🔹 Step 6: Implement Movement**
-
-Implement smooth movement:
-
-* Forward/backward (W/S)
-* Left/right strafing (A/D)
-* Look left/right (← →)
-
-Check **wall collision** (bonus or safety feature).
-
----
-
-### **🔹 Step 7: Clean Code and Memory**
-
-* Free every allocation.
-* Handle errors gracefully.
-* Follow **42 Norm** strictly.
-
----
-
-### **🔹 Step 8: Test and Debug**
-
-* Try different `.cub` files.
-* Break it intentionally to test error handling.
-* Optimize drawing loop for performance.
-
----
-
-### **🔹 Step 9: Bonus Features (Optional)**
-
-Only if the mandatory part is **100% working**, you can implement:
-
-* ✅ **Minimap**
-* ✅ **Wall collisions**
-* ✅ **Doors that open/close**
-* ✅ **Sprites** (like enemies, objects)
-* ✅ **Mouse look**
-
----
-
-### **🔹 Step 10: Submission & Evaluation**
-
-* Push everything to your **Git repository**.
-* Test with the peer before defense.
-* Have test cases ready for demo.
-
----
-
-Here’s a complete and professional **`README.md`** for your **Cub3D** project on GitHub. You can copy and customize it as needed:
+Just replace the placeholder link with your real Medium post URL.
 
 ---
 
 ````markdown
-# 🕹️ Cub3D – Raycasting Engine with MiniLibX
+# 🎮 **Cub3D** – *Raycasting Engine with MiniLibX*
 
-> A 3D maze game inspired by Wolfenstein 3D, built from scratch in C using the MiniLibX graphics library.  
-> Developed as part of the 42 programming school curriculum.
-
----
-
-## 📌 Project Description
-
-Cub3D is a simple 3D graphics engine using **raycasting**, a technique used in early first-person shooter games. The project parses a configuration file (`.cub`) to generate and render a maze from a first-person view using **MiniLibX**.
-
-This project is an introduction to basic computer graphics, linear algebra, raycasting, and real-time rendering using only low-level tools.
+> 🚀 A 3D maze game inspired by **Wolfenstein 3D**, built from scratch in **C** using the **MiniLibX** graphics library.  
+> 🏫 Developed as part of the **42 school curriculum**.
 
 ---
 
-## 🧠 Features
+## 📖 **Read the Full Tutorial on Medium**
 
-- Raycasting-based 3D projection
-- Textured walls (N, S, E, W)
-- Floor and ceiling coloring
-- WASD movement and camera rotation
-- Escape key and window close handling
-- `.cub` file parser with error handling
+📝 I’ve written a complete walkthrough of the project, including raycasting theory, map parsing, and rendering techniques:
+
+👉 [📚 **Mastering Raycasting in Cub3D – A 42 Project Guide**](https://medium.com/your-medium-link)
+
+> *(Replace this link with your actual Medium URL)*
 
 ---
 
-## 🚀 Getting Started
+## 🧠 **Project Overview**
 
-### ⚙️ Prerequisites
+Cub3D is a minimal **3D graphics engine** that uses **raycasting** to simulate a first-person view inside a 2D map. The player can move through a textured environment where walls, floor, and ceiling are rendered in real time.
 
-- A Unix system (Linux or macOS)
-- MiniLibX installed or included
-- `make`, `gcc`, and `libXext`, `libX11`, and `libbsd` (Linux)
+📁 The engine loads data from a `.cub` configuration file, parses texture paths, colors, and map layout, then renders the scene using the **MiniLibX** library.
 
-### 📦 Installation
+---
+
+## 🔧 **Features**
+
+✅ Raycasting-based 3D projection  
+✅ Textured walls (`NO`, `SO`, `WE`, `EA`)  
+✅ Floor and ceiling coloring (`F`, `C`)  
+✅ Smooth movement (WASD + rotation)  
+✅ Error-handling and map validation  
+✅ Clean memory management
+
+---
+
+## 🛠️ **Project Setup**
+
+### 📦 Requirements
+
+- Unix-based OS (Linux/macOS)
+- `make`, `gcc`
+- MiniLibX (`mlx`) installed
+- Linux: `libXext`, `libX11`, `libbsd`
+
+---
+
+## 🚀 **How to Build and Run**
+
+### 🧪 Clone and Compile
 
 ```bash
 git clone https://github.com/yourusername/cub3d_42.git
@@ -198,7 +62,7 @@ cd cub3d_42
 make
 ````
 
-### 🕹️ Run the game
+### 🕹️ Run the Game
 
 ```bash
 ./cub3D maps/map.cub
@@ -206,96 +70,149 @@ make
 
 ---
 
-## 📄 `.cub` File Format
+## 📄 **.cub File Format**
 
-The `.cub` file must contain:
+A valid `.cub` file contains:
 
-* 4 wall textures:
+### 🎨 **Texture Paths**
 
-  ```
-  NO ./textures/north.xpm
-  SO ./textures/south.xpm
-  WE ./textures/west.xpm
-  EA ./textures/east.xpm
-  ```
-* Floor and ceiling colors:
+```
+NO ./textures/north.xpm
+SO ./textures/south.xpm
+WE ./textures/west.xpm
+EA ./textures/east.xpm
+```
 
-  ```
-  F 220,100,0
-  C 225,30,0
-  ```
-* Map layout using:
+### 🟫 **Colors**
 
-  * `1`: wall
-  * `0`: empty space
-  * `N`, `S`, `E`, `W`: player spawn and direction
+```
+F 220,100,0   # Floor RGB
+C 225,30,0   # Ceiling RGB
+```
 
----
+### 🧱 **Map Layout**
 
-## 🎮 Controls
+```
+111111
+100001
+1000N1
+111111
+```
 
-| Key   | Action            |
-| ----- | ----------------- |
-| W     | Move forward      |
-| S     | Move backward     |
-| A     | Strafe left       |
-| D     | Strafe right      |
-| ← / → | Rotate left/right |
-| ESC   | Exit the game     |
+Legend:
 
----
+* `1` – Wall
+* `0` – Empty space
+* `N` / `S` / `E` / `W` – Player spawn and direction
 
-## 🌟 Bonus Features (Optional)
+🔒 **Map Rules**:
 
-If the mandatory part is perfect, bonuses may include:
-
-* Collision detection
-* Mini-map rendering
-* Doors (open/close)
-* Mouse control for view
-* Sprites (animated enemies, etc.)
-* Floor/ceiling textures
+* Must be enclosed by walls.
+* Must contain **exactly one player**.
+* Inner empty spaces must be handled.
 
 ---
 
-## 🛠️ Project Structure
+## ⏱️ **Raycasting Explained (Brief)**
+
+> Raycasting is a technique to render a 3D projection from a 2D grid by casting rays from the player’s point of view.
+
+### 🔍 Key Steps:
+
+1. Initialize player position/direction
+2. Calculate camera plane
+3. Cast one ray per screen column
+4. Use **DDA** algorithm to detect wall hit
+5. Calculate distance to wall
+6. Choose texture based on wall face
+7. Draw the slice from the texture
+
+---
+
+## 🎨 **Rendering Using MiniLibX**
+
+You’ll use:
+
+* `mlx_new_window`
+* `mlx_new_image`, `mlx_put_image_to_window`
+* Event hooks: keypress, mouse, close window
+
+---
+
+## 🎮 **Game Controls**
+
+|     Key | Action            |
+| ------: | ----------------- |
+|     `W` | Move forward      |
+|     `S` | Move backward     |
+|     `A` | Strafe left       |
+|     `D` | Strafe right      |
+| `← / →` | Rotate left/right |
+|   `ESC` | Exit game         |
+
+---
+
+## 🧹 **Memory & Error Management**
+
+* ✅ Free all allocated memory.
+* ✅ Handle invalid input with clear error messages.
+* ✅ Follow [42 Norme]([https://github.com/42School/norminette](https://medium.com/@devabdilah/3d-ray-casting-game-with-cub3d-7a116376056a)) strictly.
+
+---
+
+## 🧪 **Testing Tips**
+
+* Try maps with broken formatting (missing textures, unclosed walls).
+* Validate parser, raycaster, and movement.
+* Use `valgrind` to detect memory leaks.
+
+---
+
+## 🌟 **Bonus Features** (Optional)
+
+If the mandatory part is **100% complete**, you may implement:
+
+* ✅ Minimap rendering
+* ✅ Collision detection
+* ✅ Openable/closable doors
+* ✅ Sprites (e.g., enemies)
+* ✅ Mouse-based view rotation
+* ✅ Floor/Ceiling texture mapping
+
+---
+
+## 📁 **Project Structure**
 
 ```
 .
-├── src/            # Main source code
+├── src/            # Source code files
 ├── include/        # Header files
-├── textures/       # .xpm texture files
-├── maps/           # Sample .cub map files
-├── Makefile
-└── README.md
+├── textures/       # XPM texture images
+├── maps/           # Sample .cub maps
+├── Makefile        # Build system
+└── README.md       # Project documentation
 ```
 
 ---
 
-## 📚 Skills Gained
+## 📚 **What You’ll Learn**
 
-* 2D-to-3D projection (raycasting)
-* Game loop & input handling
-* Texture mapping
-* File parsing & validation
-* Working with MiniLibX
-
----
-
-## 👨‍💻 Author
-
-* [Your Name](https://github.com/yourusername)
+* 🔍 Raycasting algorithm
+* 🎮 Game loop and input systems
+* 🎨 Basic 2D/3D graphics rendering
+* 📂 File I/O and string parsing
+* 🧠 Optimization and performance logic
 
 ---
 
-## 🏁 License
+## 👨‍💻 **Author**
 
-This project is part of the 42 School curriculum and is shared for educational purposes only.
-
-```
+🧑‍💻 [Abdilah Chemlal](https://github.com/A-chem)
 
 ---
 
-Would you like a sample `.cub` map file to include in your repo too?
-```
+## 🏁 **License**
+
+This project is part of the 42 School curriculum.
+Use for learning purposes only. Do **not** submit this directly.
 
