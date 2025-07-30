@@ -1,10 +1,3 @@
-Great! Here's the updated version of your `README.md`, now including a **📖 Medium article link** section where you can share tutorials, walkthroughs, or detailed dev blogs for your **Cub3D** project.
-
-Just replace the placeholder link with your real Medium post URL.
-
----
-
-````markdown
 # 🎮 **Cub3D** – *Raycasting Engine with MiniLibX*
 
 > 🚀 A 3D maze game inspired by **Wolfenstein 3D**, built from scratch in **C** using the **MiniLibX** graphics library.  
