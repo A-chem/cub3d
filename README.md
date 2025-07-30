@@ -17,13 +17,13 @@
 🧠 Want to deeply understand how raycasting works in this project?  
 Check out my detailed Cub3D tutorial on Medium:
 
-👉 [📚 **Mastering Raycasting in Cub3D – A 42 Project Guide**](https://medium.com/@yourusername/mastering-raycasting-in-cub3d-42-project-guide-xxxxx)
+👉 [📚 **Mastering Raycasting in Cub3D – A 42 Project Guide**](https://medium.com/@devabdilah/3d-ray-casting-game-with-cub3d-7a116376056a)
 
 ### 🔹 Introduction to MiniLibX
 
 🎨 If you’re new to MiniLibX and don’t know how to set it up or use it, start here:
 
-👉 [🧵 **MiniLibX 101: A Beginner’s Guide to 42’s Graphical Library**](https://medium.com/@yourusername/minilibx-101-a-beginners-guide-to-42s-graphical-library-xxxxx)
+👉 [🧵 **MiniLibX 101: A Beginner’s Guide to 42’s Graphical Library**](https://medium.com/@devabdilah/minilibx-mlx-ff9ad1c52521)
 
 These articles include:
 - ✅ Raycasting math and DDA explained visually
