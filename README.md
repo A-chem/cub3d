@@ -1,3 +1,6 @@
+---
+
+````markdown
 # 🎮 **Cub3D** – *Raycasting Engine with MiniLibX*
 
 > 🚀 A 3D maze game inspired by **Wolfenstein 3D**, built from scratch in **C** using the **MiniLibX** graphics library.  
@@ -5,13 +8,25 @@
 
 ---
 
-## 📖 **Read the Full Tutorial on Medium**
+## 📖 Medium Articles & Learning Resources
 
-📝 I’ve written a complete walkthrough of the project, including raycasting theory, map parsing, and rendering techniques:
+### 🔹 Learn More About Cub3D
 
-👉 [📚 **Mastering Raycasting in Cub3D – A 42 Project Guide**](https://medium.com/your-medium-link)
+🧠 Want to deeply understand how raycasting works in this project?  
+Check out my detailed Cub3D tutorial on Medium:
 
-> *(Replace this link with your actual Medium URL)*
+👉 [📚 **Mastering Raycasting in Cub3D – A 42 Project Guide**](https://medium.com/@yourusername/mastering-raycasting-in-cub3d-42-project-guide-xxxxx)
+
+### 🔹 Introduction to MiniLibX
+
+🎨 If you’re new to MiniLibX and don’t know how to set it up or use it, start here:
+
+👉 [🧵 **MiniLibX 101: A Beginner’s Guide to 42’s Graphical Library**](https://medium.com/@yourusername/minilibx-101-a-beginners-guide-to-42s-graphical-library-xxxxx)
+
+These articles include:
+- ✅ Raycasting math and DDA explained visually
+- ✅ How to draw, move, and rotate using MiniLibX
+- ✅ Common bugs and how to debug them
 
 ---
 
@@ -149,7 +164,7 @@ You’ll use:
 
 * ✅ Free all allocated memory.
 * ✅ Handle invalid input with clear error messages.
-* ✅ Follow [42 Norme]([https://github.com/42School/norminette](https://medium.com/@devabdilah/3d-ray-casting-game-with-cub3d-7a116376056a)) strictly.
+* ✅ Follow [42 Norme](https://github.com/42School/norminette) strictly.
 
 ---
 
@@ -200,7 +215,7 @@ If the mandatory part is **100% complete**, you may implement:
 
 ## 👨‍💻 **Author**
 
-🧑‍💻 [Abdilah Chemlal](https://github.com/A-chem)
+🧑‍💻 [Your Name](https://github.com/yourusername)
 
 ---
 
@@ -209,3 +224,8 @@ If the mandatory part is **100% complete**, you may implement:
 This project is part of the 42 School curriculum.
 Use for learning purposes only. Do **not** submit this directly.
 
+---
+
+```
+
+---
