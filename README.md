@@ -151,4 +151,151 @@ Only if the mandatory part is **100% working**, you can implement:
 
 ---
 
+Here’s a complete and professional **`README.md`** for your **Cub3D** project on GitHub. You can copy and customize it as needed:
+
+---
+
+````markdown
+# 🕹️ Cub3D – Raycasting Engine with MiniLibX
+
+> A 3D maze game inspired by Wolfenstein 3D, built from scratch in C using the MiniLibX graphics library.  
+> Developed as part of the 42 programming school curriculum.
+
+---
+
+## 📌 Project Description
+
+Cub3D is a simple 3D graphics engine using **raycasting**, a technique used in early first-person shooter games. The project parses a configuration file (`.cub`) to generate and render a maze from a first-person view using **MiniLibX**.
+
+This project is an introduction to basic computer graphics, linear algebra, raycasting, and real-time rendering using only low-level tools.
+
+---
+
+## 🧠 Features
+
+- Raycasting-based 3D projection
+- Textured walls (N, S, E, W)
+- Floor and ceiling coloring
+- WASD movement and camera rotation
+- Escape key and window close handling
+- `.cub` file parser with error handling
+
+---
+
+## 🚀 Getting Started
+
+### ⚙️ Prerequisites
+
+- A Unix system (Linux or macOS)
+- MiniLibX installed or included
+- `make`, `gcc`, and `libXext`, `libX11`, and `libbsd` (Linux)
+
+### 📦 Installation
+
+```bash
+git clone https://github.com/yourusername/cub3d_42.git
+cd cub3d_42
+make
+````
+
+### 🕹️ Run the game
+
+```bash
+./cub3D maps/map.cub
+```
+
+---
+
+## 📄 `.cub` File Format
+
+The `.cub` file must contain:
+
+* 4 wall textures:
+
+  ```
+  NO ./textures/north.xpm
+  SO ./textures/south.xpm
+  WE ./textures/west.xpm
+  EA ./textures/east.xpm
+  ```
+* Floor and ceiling colors:
+
+  ```
+  F 220,100,0
+  C 225,30,0
+  ```
+* Map layout using:
+
+  * `1`: wall
+  * `0`: empty space
+  * `N`, `S`, `E`, `W`: player spawn and direction
+
+---
+
+## 🎮 Controls
+
+| Key   | Action            |
+| ----- | ----------------- |
+| W     | Move forward      |
+| S     | Move backward     |
+| A     | Strafe left       |
+| D     | Strafe right      |
+| ← / → | Rotate left/right |
+| ESC   | Exit the game     |
+
+---
+
+## 🌟 Bonus Features (Optional)
+
+If the mandatory part is perfect, bonuses may include:
+
+* Collision detection
+* Mini-map rendering
+* Doors (open/close)
+* Mouse control for view
+* Sprites (animated enemies, etc.)
+* Floor/ceiling textures
+
+---
+
+## 🛠️ Project Structure
+
+```
+.
+├── src/            # Main source code
+├── include/        # Header files
+├── textures/       # .xpm texture files
+├── maps/           # Sample .cub map files
+├── Makefile
+└── README.md
+```
+
+---
+
+## 📚 Skills Gained
+
+* 2D-to-3D projection (raycasting)
+* Game loop & input handling
+* Texture mapping
+* File parsing & validation
+* Working with MiniLibX
+
+---
+
+## 👨‍💻 Author
+
+* [Your Name](https://github.com/yourusername)
+
+---
+
+## 🏁 License
+
+This project is part of the 42 School curriculum and is shared for educational purposes only.
+
+```
+
+---
+
+Would you like a sample `.cub` map file to include in your repo too?
+```
 
